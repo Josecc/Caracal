@@ -144,7 +144,7 @@ var ffmpegWorker = async.queue((task, callback) => {
 }, config.videoConcurrency);
 
 var app = express();
-server.use(session({
+app.use(session({
   store: new RedisStore({
     host: redis,
     port: 6379,
