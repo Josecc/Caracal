@@ -86,7 +86,7 @@ const requiresAdmin = (req, res, next) => {
   } else {
     res.status(401).json({message: 'Please log in to post pictures.'})
   }
-});
+};
 
 switch (config.idsGeneration) {
 	case 'hash':
