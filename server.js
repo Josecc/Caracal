@@ -156,8 +156,6 @@ server.use(session({
   rolling: true,
   saveUninitialized: false,
 }));
-server.use(passport.initialize());
-server.use(passport.session());
 app.use(compression());
 app.use(morgan('short'));
 
